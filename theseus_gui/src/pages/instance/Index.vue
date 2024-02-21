@@ -75,7 +75,6 @@
       </Card>
     </div>
     <div class="content">
-      <Promotion :external="false" query-param="?r=launcher" />
       <RouterView v-slot="{ Component }">
         <template v-if="Component">
           <Suspense @pending="loadingBar.startLoading()" @resolve="loadingBar.stopLoading()">
